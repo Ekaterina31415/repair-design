@@ -4,6 +4,18 @@
   height: 100vh
   color: $light
   position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  justify-content: flex-start
+
+  &__content
+    max-width: 670px
+
+  &__text
+    font-size: 22px
+    max-width: 600px
+    line-height: 30px
 
   &__instagram
     max-width: 80px
@@ -11,6 +23,23 @@
     position: absolute
     left: 0
     top: 0
+
+  &__button
+    margin-right: 20px
+
+  &__scroll-down
+    position: absolute
+    left: 0
+    bottom: 0
+    min-width: 247px
+    min-height: 97px
+    background-color: $dark
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+    color: $light
+    text-decoration: none
 
 .instagram
   background-color: $dark
@@ -26,3 +55,10 @@
 
 .title
   margin: 0
+  font-family: 'Yeseva One', cursive
+  font-size: 40px
+  line-height: 53px
+  text-transform: uppercase
+
+  &--primary
+    color: $primary
