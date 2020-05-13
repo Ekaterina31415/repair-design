@@ -553,6 +553,20 @@ img {
   color: #fff;
   padding: 1.214rem 1.285rem; }
 
+.design-project__description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.78rem; }
+
+.description__text {
+  max-width: 60.57rem;
+  font-family: 'FuturaBookC', sans-serif;
+  font-weight: normal;
+  font-size: 1.42rem;
+  line-height: 1.92rem;
+  text-align: center;
+  color: #131313; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
