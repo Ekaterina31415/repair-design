@@ -353,23 +353,28 @@ body {
 html {
   font-size: 14px; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px; }
-  .section-title__img {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__img::after, .section-title__img::before {
-      content: '';
-      margin: 0 10px;
-      height: 2px;
-      width: 32px;
-      background-color: #E3B873; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 60px 0; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px; }
+    .section-title__img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__img::after, .section-title__img::before {
+        content: '';
+        margin: 0 10px;
+        height: 2px;
+        width: 32px;
+        background-color: #E3B873; }
 
 .header {
   background-color: #131313;
@@ -498,6 +503,56 @@ html {
   .title--primary {
     color: #E3B873; }
 
+.types__section-title {
+  margin-bottom: 1.6rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8rem;
+  padding-top: 1.79rem;
+  padding-left: 2.14rem;
+  max-width: 23rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #fff; }
+
+.card__title {
+  margin-top: 0;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.78rem; }
+
+.card__list {
+  margin: 0;
+  padding: 0 0 4.5rem 1rem;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.78rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.78rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.78rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 1.285rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -510,6 +565,15 @@ html {
   .hero__instagram {
     display: none; }
   .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 810px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
