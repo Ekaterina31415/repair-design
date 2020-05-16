@@ -13,13 +13,38 @@ img
 
 .section
   padding: 60px 0
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
-    font-weight: normal
-    font-size: 0.8rem
-    line-height: 28px
+    &--left
+      text-align: left
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
+      font-weight: normal
+      font-size: 0.8rem
+      line-height: 138%
+      &--primary
+        color: $primary
+        font-size: 1.92rem
+        line-height: 2.64rem
+        font-weight: normal
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
+
 
     &__img
       display: flex
