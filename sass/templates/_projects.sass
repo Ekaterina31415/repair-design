@@ -1,11 +1,15 @@
+.projects
+  padding-bottom: 30rem
+  
 .swiper
   &-slide
     display: flex
     flex-wrap: wrap
+    padding-bottom: 5rem
     &__text
       flex-basis: 50%
-      margin-bottom: 2.42rem
-      padding-bottom: 2rem
+      margin-bottom: 1rem
+      margin-right: -5rem
     &__heading
       font-size: 1.28rem
       color: $primary
@@ -13,7 +17,7 @@
       font-weight: normal
       line-height: 1.78rem
       text-transform: uppercase
-      margin-bottom: 0.64rem
+      margin-bottom: 0.4rem
     &__value
       font-weight: normal
       font-size: 1.1rem
@@ -26,9 +30,9 @@
   &-button
     &-prev
       background: url('../img/arrow-left.svg') no-repeat center
-      background-size: 42px
-      width: 42px
-      height: 14px
+      background-size: 3rem
+      width: 3rem
+      height: 1rem
       bottom: 0
       top: auto
       left: 0
@@ -36,13 +40,14 @@
         display: none
     &-next
       background: url('../img/arrow-right.svg') no-repeat center
-      background-size: 42px
-      width: 42px
-      height: 14px
+      background-size: 3rem
+      width: 3rem
+      height: 1rem
       bottom: 0
       top: auto
       &::after
         display: none
+
 
 
 .swiper-container-horizontal>.swiper-pagination-bullets

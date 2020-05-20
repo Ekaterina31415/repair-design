@@ -23,7 +23,7 @@
     color: $light
 
 .label
-  font-family: 'FuturaBookC', sans-serif
+  font-family: 'Futura Book', sans-serif
   font-size: 1.07rem
   &--light
     color: rgba($light, 0.5)
@@ -35,8 +35,17 @@
   font-size: 1.285rem
   color: $light
   padding: 0.5rem 0
-  &::placeholder
-    color: $light
+  &--dark
+    border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.5)
+    padding-left: 0
+    padding-bottom: 0.6rem
+    margin-top: 0.5rem
+    &::placeholder
+      color: $dark
+  &--light
+    &::placeholder
+      color: $light
 
 .policy
   &__checkbox
