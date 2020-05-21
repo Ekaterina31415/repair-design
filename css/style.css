@@ -692,7 +692,7 @@ img {
 
 .control__section-title {
   margin-bottom: 2.21rem;
-  margin-top: -30rem; }
+  margin-top: -25rem; }
 
 .control__text {
   max-width: 35rem;
@@ -795,10 +795,12 @@ img {
 .card__img {
   max-width: 22.5rem; }
 
-.design-project__description {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem; }
+.design-project {
+  padding-bottom: 30rem; }
+  .design-project__description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem; }
 
 .description__text {
   max-width: 43rem;
@@ -810,13 +812,23 @@ img {
   color: #131313; }
 
 .footer {
-  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  background: url("../img/footer-bg.jpg") no-repeat center/cover;
+  position: relative;
+  z-index: -3; }
+  .footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.5);
+    z-index: -1; }
   .footer__wrap {
     background: url("../img/bg_lines.svg") no-repeat center;
     background-color: #181818;
     max-width: 45rem;
     margin: auto;
     margin-bottom: 3rem;
+    margin-top: -15rem;
     padding: 1rem; }
   .footer__title {
     margin-bottom: 1rem;
@@ -826,6 +838,15 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #fff; }
+    .footer__title--primary {
+      margin: auto;
+      max-width: 28rem;
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: #E3B873; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -853,6 +874,24 @@ img {
   .footer-menu {
     background-color: #131313;
     padding: 2rem 0; }
+  .footer__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem; }
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer-link {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 2rem;
+    width: 2rem; }
+    .footer-link__email {
+      background: url("../img/footer_icon_email.svg") no-repeat center;
+      margin-right: 1rem; }
+    .footer-link__inst {
+      background: url("../img/footer_icon_inst.svg") no-repeat center; }
 
 .modal {
   opacity: 0;

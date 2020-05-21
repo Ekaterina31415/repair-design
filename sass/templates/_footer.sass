@@ -1,12 +1,21 @@
 .footer
-  background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
-
+  background: url('../img/footer-bg.jpg') no-repeat center / cover
+  position: relative
+  z-index: -3
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background:  rgba(24, 24, 24, 0.5)
+    z-index: -1
   &__wrap
     background: url('../img/bg_lines.svg') no-repeat center
     background-color: $black
     max-width: 45rem
     margin: auto
     margin-bottom: 3rem
+    margin-top: -15rem
     padding: 1rem
   &__title
     margin-bottom: 1rem
@@ -16,6 +25,15 @@
     text-align: center
     text-transform: uppercase
     color: $light
+    &--primary
+      margin: auto
+      max-width: 28rem
+      font-weight: normal
+      font-size: 1.2rem
+      line-height: 1.5rem
+      text-align: center
+      text-transform: uppercase
+      color: $primary
   &__form
     display: flex
     flex-wrap: wrap
@@ -43,3 +61,22 @@
   &-menu
     background-color: $dark
     padding: 2rem 0
+  &__map
+    display: flex
+    justify-content: center
+    margin-bottom: 4rem
+  &__links
+    display: flex
+    justify-content: center
+    align-items: center
+  &-link
+    margin-top: 2rem
+    margin-bottom: 2rem
+    height: 2rem
+    width: 2rem
+    &__email
+      background: url('../img/footer_icon_email.svg') no-repeat center
+      margin-right: 1rem
+    &__inst
+      background: url('../img/footer_icon_inst.svg') no-repeat center
+    
