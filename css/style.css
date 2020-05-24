@@ -885,8 +885,8 @@ img {
   .footer-link {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 2rem;
-    width: 2rem; }
+    height: 30px;
+    width: 30px; }
     .footer-link__email {
       background: url("../img/footer_icon_email.svg") no-repeat center;
       margin-right: 1rem; }
@@ -1020,7 +1020,9 @@ img {
   .control__button {
     flex-basis: 49%;
     margin-top: 2rem;
-    order: 2; } }
+    order: 2; }
+  .footer__links {
+    order: 3; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
