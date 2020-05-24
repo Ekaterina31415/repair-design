@@ -93,6 +93,19 @@ var mySwiper = new Swiper('.swiper-container', {
       },
       userPhone: "Номер телефона обязателен",
       userQuestion: "Введите вопрос"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с Вами в ближайшее время');
+          modal.removeClass('modal--visible');
+          $(form)[0].reset();
+        }
+      });
     }
   });
 
