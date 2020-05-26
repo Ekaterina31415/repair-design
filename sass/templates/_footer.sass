@@ -1,15 +1,18 @@
 .footer
-  background: url('../img/footer-bg.jpg') no-repeat center / cover
+  background: grey url('../img/footer-bg.jpg') no-repeat center / cover
   position: relative
   &__wrap
+    position: absolute
     background: url('../img/bg_lines.svg') no-repeat center
     background-color: $black
-    max-width: 45rem
-    margin: auto
+    max-width: 50rem
     margin-bottom: 3rem
-    padding: 1rem
+    padding: 1rem 12rem
+    margin-top: -12rem
+    left: 50%
+    transform: translateX(-50%)
   &__title
-    margin-bottom: 1rem
+    margin-bottom: 2.8rem
     font-family: 'Yeseva One', cursive
     font-weight: normal
     font-size: 1.1rem
@@ -20,6 +23,7 @@
 
     &--primary
       margin: auto
+      padding-top: 20rem
       max-width: 28rem
       font-weight: normal
       font-size: 1.2rem
@@ -30,18 +34,19 @@
   &__form
     display: flex
     flex-wrap: wrap
-    max-width: 28rem
+    max-width: 29rem
     margin: auto
     justify-content: space-between
     &_label
-      font-size: 0.8rem
+      font-size: 0.75rem
+      margin-bottom: -0.3rem
   &__input
-    font-size: 0.8rem
+    font-size: 1rem
   &__input-group
     display: flex
     flex-direction: column
     flex-basis: 45%
-    margin-bottom: 2rem
+    margin-bottom: 2.5rem
     &--full-width
       flex-basis: 100%
       margin-bottom: 1rem
@@ -50,7 +55,9 @@
     margin-bottom: 3rem
   &__button
     margin: auto
-    padding: 1rem 3rem
+    padding: 1rem 3.6rem
+    border-radius: 0
+    font-size: 0.9rem
   &-menu
     background-color: $dark
     padding: 2rem 0
@@ -63,7 +70,7 @@
     justify-content: center
     align-items: center
   &-link
-    margin-top: 2rem
+    margin-top: 1.5rem
     margin-bottom: 2rem
     height: 30px
     width: 30px

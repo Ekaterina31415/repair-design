@@ -10,6 +10,7 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
+
 var mySwiper = new Swiper('.swiper-container', {
   loop: true,
   pagination: {
@@ -26,20 +27,26 @@ var mySwiper = new Swiper('.swiper-container', {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width() + 15 + bullets.width() + 15)
+  bullets.css('left', prev.width() + 15)
 
   new WOW().init();
 
   //Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxLength: 15
       },
-      userPhone: "required",
+      policyCheckbox: "required",
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
       userEmail: {
         required: true,
         email: true
@@ -50,7 +57,11 @@ var mySwiper = new Swiper('.swiper-container', {
         required: "Имя обязательно",
         minlength: "Не менее двух букв"
       },
-      userPhone: "Номер телефона обязателен",
+      policyCheckbox: "Подтвердите согласие на обработку персональных данных",
+      userPhone: {
+        required: "Номер телефона обязателен",
+        minlength: "Минимальная длина номера - 11 цифр"
+      },
       userEmail: {
         required: "Email обязателен",
         email: "Ваш email должен быть формата name@domain.com"
@@ -58,32 +69,57 @@ var mySwiper = new Swiper('.swiper-container', {
     }
   });
 
+ /* $('.modal__form').validate({
+    errorClass: "invalid_policy",
+    rules: {
+      policyCheckbox: "required",
+    },
+    messages: {
+      policyCheckbox: "Подтвердите согласие на обработку персональных данных",
+    }
+  });*/
+  
+
   $('.control__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,
         minlength: 2
       },
-      userPhone: "required"
+      policyCheckbox: "required",
+      userPhone: {
+        required: true,
+        minlength: 17
+      }
     },
     messages: {
       userName: {
         required: "Имя обязательно",
         minlength: "Не менее двух букв"
       },
-      userPhone: "Номер телефона обязателен"
+      policyCheckbox: "Подтвердите согласие на обработку персональных данных",
+      userPhone: {
+        required: "Номер телефона обязателен",
+        minlength: "Минимальная длина номера - 11 цифр"
+      }
     }
   });
 
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      policyCheckbox: "required",
       userQuestion: "required"
     },
     messages: {
@@ -91,7 +127,11 @@ var mySwiper = new Swiper('.swiper-container', {
         required: "Имя обязательно",
         minlength: "Не менее двух букв"
       },
-      userPhone: "Номер телефона обязателен",
+      userPhone: {
+        required: "Номер телефона обязателен",
+        minlength: "Минимальная длина номера - 11 цифр"
+      },
+      policyCheckbox: "Подтвердите согласие на обработку персональных данных",
       userQuestion: "Введите вопрос"
     }
     

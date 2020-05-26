@@ -1,6 +1,4 @@
-@media screen and ( min-width: 1400px  )
-  html
-    font-size: 16px
+
 
 @media screen and ( max-width: 1399px )
   html
@@ -20,7 +18,14 @@
       cursor: pointer
     &--primary
       &:hover
-      box-shadow: none
+        box-shadow: none
+    &--outline
+      &:hover
+        background-color: $primary
+        color: $light
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+        transition: box-shadow 0.3s
+        border: none
   .nav
     &__item
       &:hover
@@ -86,6 +91,7 @@
       margin-bottom: 2.28rem
     &__content
       max-width: 22.86rem
+      margin: auto
     &__button
       display: block
       min-width: 22.85rem
@@ -95,8 +101,21 @@
 
   .swiper
     &-slide
+      padding-bottom: 2rem
       &__heading
         font-size: 1.1rem
+      &__text
+        margin-right: 0
+      &__img
+        margin-top: 1rem
+        margin-bottom: 2rem
+
+  .projects
+    padding-bottom: 17rem
+  .section-title__projects
+    padding-top: -50px
+
+  
 
 @media screen and ( max-width: 440px  )
   .control
