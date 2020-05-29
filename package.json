@@ -18,11 +18,16 @@
   "homepage": "https://github.com/Ekaterina31415/repair-design#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-minify": "^3.1.0"
   },
   "dependencies": {
     "animate.css": "^4.1.0",
     "browser-sync": "^2.26.7",
-    "gulp-sass": "^4.1.0"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-tinypng-compress": "^1.2.5"
   }
 }

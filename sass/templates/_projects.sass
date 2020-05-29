@@ -1,15 +1,20 @@
 .projects
-  padding-bottom: 30rem
+  padding-bottom: 20rem
+  &__swiper-wrapper
+    margin-top: 1rem
+  &__swiper-slide
+    display: grid
+    grid-template-columns: 1fr 1fr
   
 .swiper
+  &-wrapper
+    margin-bottom: 0.9rem
   &-slide
-    display: flex
-    flex-wrap: wrap
     padding-bottom: 5rem
+    margin-top: 0.95rem
     &__text
       flex-basis: 50%
-      margin-bottom: 1rem
-      margin-right: -5rem
+      margin-bottom: 1.4rem
     &__heading
       font-size: 1.28rem
       color: $primary

@@ -1,10 +1,8 @@
-
-
-@media screen and ( max-width: 1399px )
+@media ( max-width: 1399px )
   html
     font-size: 14px
   
-@media screen and ( max-width: 1200px )
+@media ( max-width: 1200px )
   html
     font-size: 12px
 
@@ -12,7 +10,7 @@
     &__item
       margin-right: 1rem
 
-@media screen and ( min-width: 993px  )
+@media ( min-width: 993px  )
   .button
     &:hover
       cursor: pointer
@@ -32,7 +30,7 @@
         color: $primary
   
 
-@media screen and ( max-width: 992px )
+@media ( max-width: 992px )
   .nav
     display: none
 
@@ -43,12 +41,22 @@
     &__content
       margin-left: 0
 
-  
+  .container
+    padding: 0 3rem
 
-@media screen and ( max-width: 810px )
+
+@media ( max-width: 810px )
+  .container
+    padding: 0 1rem
   .col
     &-50
       width: 90%
+    &-40
+      width: 70%
+
+
+
+
 
   .row
     flex-direction: column
@@ -61,11 +69,57 @@
   .card
     &__text
       margin-left: 0
+  .swiper
+    &-slide
+      padding-bottom: 2rem
+      &__heading
+        font-size: 1.1rem
+      &__text
+        margin-right: 0
+      &__img
+        margin-top: 1rem
+        margin-bottom: 2rem
+  .control
+    &__label
+      font-size: 1rem
+      margin-bottom: 0
+    &__input-group
+      flex-basis: 100%
+    &__policy
+      &-label
+        justify-content: left
+        font-size: 1.2rem
+    &__button
+      flex-basis: 60%
+      margin-top: 2rem
+      order: 2
+      border-radius: 0
+    &__input
+      font-size: 1.5rem
+      flex-basis: 100%
 
-@media screen and ( max-width: 570px )
+  .footer
+    &__wrap
+      width: 40rem
+      margin-top: -20rem
+    &__title
+      &--primary
+        padding-top: 25rem
+
+
+  
+
+
+@media ( max-width: 570px )
 
   html
     font-size: 10px
+
+  .control
+    &__input
+      width: 100%
+    &__button
+      flex-basis: 70%
         
   
   .col
@@ -99,16 +153,6 @@
     &__scroll-down
       display: none
 
-  .swiper
-    &-slide
-      padding-bottom: 2rem
-      &__heading
-        font-size: 1.1rem
-      &__text
-        margin-right: 0
-      &__img
-        margin-top: 1rem
-        margin-bottom: 2rem
 
   .projects
     padding-bottom: 17rem
@@ -117,24 +161,79 @@
 
   
 
-@media screen and ( max-width: 440px  )
+@media ( max-width: 440px  )
+  .hero__container
+    width: 95%
   .control
+    &__label
+      font-size: 1rem
+      margin-bottom: 0
+    &__input
+      width: 100%
+      font-size: 1.5rem
     &__input-group
-      flex-basis: 48%
+      flex-basis: 90%
     &__policy
-      flex-basis: 49%
+      &-label
+        justify-content: left
+        font-size: 1.2rem
     &__button
-      flex-basis: 49%
+      flex-basis: 90%
       margin-top: 2rem
       order: 2
+      border-radius: 0
+
+  .section-title
+    &__heading
+      margin-bottom: 1.3rem
+      font-size: 1.6rem
+  .card
+    &__title
+      font-size: 1.3rem
+    &__list
+      font-size: 1.1rem
+      line-height: 2rem
+  .design-project
+    padding-bottom: 5rem
 
   .footer
-    &__links
-      order: 3
-  
+    background: $dark
+    &__wrap
+      background: $dark
+      padding-right: 1rem
+      padding-left: 2rem
+      margin-top: 0
+      position: relative
+      width: 100%
+      flex-direction: column
+    &__input-group
+      flex-basis: 100%
+      justify-content: start
+    &__input
+      font-size: 1.2rem
+    &__title
+      &--primary
+        padding: 0
+        font-size: 1.5rem
+    &__form
+      align-items: start
+    &__policy
+      margin-top: 1rem
+      margin-bottom: 1rem
+    &__button
+      width: 100%
+    &-menu
+      display: none
+    &__map
+      margin-bottom: 0
+      padding-bottom: 2rem
+    &__end
+      display: flex
+      flex-direction: column-reverse
 
 
-@media screen and ( max-height: 520px  )
+
+@media ( max-height: 520px  )
   .hero
     &__scroll-down
       display: none
